@@ -2,6 +2,7 @@
 name = "ctyun-codingplan-monitor"
 version = "1.0.0"
 description = "天翼云用量监视器：天翼云电脑 Coding 套餐剩余用量悬浮窗监控"
+license = { text = "GPL-2.0-only" }
 requires-python = ">=3.10"
 dependencies = [
     "httpx>=0.27",
