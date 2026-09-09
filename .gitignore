@@ -1,0 +1,16 @@
+# 含登录凭证（Cookie / 签名头），切勿提交
+config.json
+
+.venv/
+__pycache__/
+*.pyc
+
+build/
+dist/
+.tmp/
+ctun_checker.lock
+
+# 含真实 Cookie 的接口文档，切勿提交
+请求接口.md
+*.spec
+.test/

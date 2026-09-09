@@ -1,0 +1,28 @@
+[project]
+name = "ctyun-codingplan-monitor"
+version = "1.0.0"
+description = "天翼云用量监视器：天翼云电脑 Coding 套餐剩余用量悬浮窗监控"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27",
+    "websocket-client>=1.8",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.0",
+]
+
+[project.scripts]
+ctyun-monitor = "ctyun_monitor.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ctyun_monitor"]
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
